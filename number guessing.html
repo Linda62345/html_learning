@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <script>
+  	
+  	var input1 = window.prompt("Please input a digit:","0");
+
+    var value1 = parseFloat( input1 );
+
+    var rand = Math.floor((Math.random()*10)+1);
+    //要call function!!
+    function random(a)
+    {
+    	return Math.floor((Math.random()*10)+1);
+    }
+    while(value1!=rand)
+    {
+
+    	input2 = window.prompt("The answer is not correct, please input another digit:");
+    	value1 = parseFloat( input2 );
+    }
+    if (value1==rand)
+    {
+    	alert("The answer is correct");
+    }
+  </script>
+</body>
+</html>
